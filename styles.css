@@ -20,9 +20,10 @@ header{
     padding: 60px 40px;
     text-align: center;
 }
+/*  
 
 .certificado-tarjeta {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     justify-content: center;
@@ -42,9 +43,10 @@ header{
 }
 
 .certificadounitario img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
+    justify-content: center;
+    width: 80%;
+    height: 40%;
+    object-fit: fill;
 }
 
 .certificadounitario h3 {
@@ -54,4 +56,53 @@ header{
 .certificadounitario p {
     margin: 0 15px 15px;
     color: #555;
+}
+ */
+
+.certificado-tarjeta{
+    display: flex;
+    justify-content: space-around;
+}
+
+.certificado-tarjeta div{
+    width: 40vh;
+    height: 40vh;
+    background: #d3e2ef;
+    border-radius: 5%;
+    box-shadow: 1px 1px 10px 1px black;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.certificado-tarjeta div:hover{
+    transform: translateY(-2px) translateX(-2px);
+    box-shadow: 4px 4px 10px 1px black;
+}
+
+.certificadobellasA{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.certificadobellasA img{
+    margin-top: 8%;
+    width: 60%;       
+    height: 50%;       
+    object-fit: fill;   
+    display: block
+}
+
+.certificadobellasA h3{
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.certificadobellasA P{
+    margin: 4px 4px;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black
 }
