@@ -1,0 +1,57 @@
+html body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #606f7d;
+    /* font-family: ; */
+}
+
+header{
+    /* border: solid; */
+    box-shadow: 0px 0px 5px 1px #8e9dab ;
+    background-color: #8e9dab;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetas {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.certificado-tarjeta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    justify-items: center;
+    margin: 0 auto;
+}
+
+.certificado-tarjeta {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.certificadounitario img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.certificadounitario h3 {
+    margin: 15px;
+}
+
+.certificadounitario p {
+    margin: 0 15px 15px;
+    color: #555;
+}
